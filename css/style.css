@@ -1,0 +1,147 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+/***************************
+        NAVIGATION
+***************************/
+
+nav ul{
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	background-color: #2E2E2E;
+	overflow: hidden;
+	color: white;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+	-webkit-transition: max-height 0.4s;
+	-ms-transition: max-height 0.4s;
+	-moz-transition: max-height 0.4s;
+	-o-transition: max-height 0.4s;
+	transition: max-height 0.4s;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 20px;
+}
+
+nav ul li:hover{
+	color: #AF1B1B;
+}
+
+.handle{
+	width: 100%;
+	background-color: #2E2E2E;
+	text-align: left;
+	box-sizing: border-box;
+	padding: 15px 30px;
+	cursor: pointer;
+	color: white;
+	display: none;
+	background-image: url(../img/menu2.svg);
+	background-position: 95%;
+	background-repeat: no-repeat;
+}
+
+.handle:hover{
+	background-color: #AF1B1B;
+}
+
+/***************************
+        OVERLAY
+***************************/
+
+.overlayContainer {
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/pdxback.png);
+	background-size: cover;
+	background-position: 37% 0;
+}
+
+.overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(175, 27, 27, .8);
+	position: relative;
+}
+
+.overlayHeader {
+	display: block;
+	width: 30%;
+	text-align: center;
+	color: #fff;
+	font-size: 2rem;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.overlayButton {
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 1px solid white;
+	color: white;
+	padding: 15px;
+	cursor: pointer;
+}
+
+.wrapper {
+	height: 1500px;
+}
+
+#techSkills th,
+#techSkills td {
+	border: none;
+	border-bottom: 1px solid #ccc;
+	margin: 0;
+	padding: 10px;
+	text-align: left;
+}
+
+th {
+	font-weight: bold;
+}
+
+th, td {
+	display: table-cell;
+	vertical-align: inherit;
+}
+
+table {
+	border-collapse: separate;
+}
+
+@media screen and (max-width: 580px) {
+	nav ul{
+		max-height: 0;
+	}
+
+	.showing {
+		max-height: 20em;
+	}
+
+	nav ul li {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 15px 50px;
+		text-align: left;
+	}
+
+	.handle {
+		display: block;
+	}
+}
